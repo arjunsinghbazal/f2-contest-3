@@ -18,10 +18,9 @@ function myfun(){
     buton.style.padding='4px'
     buton.style.width="100%"
     buton.innerText="save";
-    let inp2=document.createElement("input")
+   let inp2=document.createElement("input")
    inp2.type='text'
    inp2.required='true'
-   
    inp2.classList.add('adjust')
 
    let inp3=document.createElement("input")
@@ -51,6 +50,7 @@ function myfun(){
    tdata6.appendChild(inp6)
    tdata7.appendChild(buton)
    tBody.append(tr);
+   id++;
    function saved(){
     if(inp2.value=="" || inp3.value=="" || inp4.value=="" || inp5.value==""|| inp6.value==""){
         alert("Fill the required feilds")
